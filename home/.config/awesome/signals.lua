@@ -1,0 +1,57 @@
+local awful = require("awful")
+local helpers = require("helpers")
+
+local signals = { }
+
+function signals.init (beautiful)
+	-- Wallpaper
+	awful.screen.connect_for_each_screen(
+		function(s) helpers.set_wallpaper(s, beautiful.wallpaper) end
+	)
+
+	-- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
+	screen.connect_signal(
+		"property::geometry",
+		function (s) helpers.set_wallpaper(s, beautiful.wallpaper) end
+	)
+
+	-- Signal function to execute when a new client appears.
+	client.connect_signal(
+		"manage",
+		function (c)
+			-- Set the windows at the slave,
+			-- i.e. put it at the end of others instead of setting it master.
+			-- if not awesome.startup then awful.client.setslave(c) end
+
+			if awesome.startup and
+			not c.size_hints.user_position
+			and not c.size_hints.program_position then
+				-- Prevent clients from being unreachable after screen count changes.
+				awful.placement.no_offscreen(c)
+			end
+		end
+	)
+
+	-- Enable sloppy focus, so that focus follows mouse.
+	client.connect_signal(
+		"mouse::enter",
+		function (c)
+			if awful.layout.get(c.screen) ~= awful.layout.suit.magnifier
+			and awful.client.focus.filter(c) then
+				client.focus = c
+			end
+		end
+	)
+
+	-- Border
+	client.connect_signal(
+		"focus",
+		function (c) c.border_color = beautiful.border_focus end
+	)
+	client.connect_signal(
+		"unfocus",
+		function (c) c.border_color = beautiful.border_normal end
+	)
+end
+
+return signals

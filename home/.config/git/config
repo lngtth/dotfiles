@@ -1,0 +1,7 @@
+[init]
+	templateDir = ~/.config/git/template/
+[core]
+	autocrlf = false
+[user]
+	name = Alex Long
+	email = lngtth@longtooth.cloud

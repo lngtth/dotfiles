@@ -1,2 +1,5 @@
 #alias la='ls -laF'
 alias la='colorls -laG'
+
+alias ll='lifelog'
+

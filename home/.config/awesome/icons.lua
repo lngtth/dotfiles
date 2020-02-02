@@ -11,7 +11,7 @@ function icons.init (theme)
 	--theme.taglist_squares_sel = gears.color.recolor_image(taglist_select_indicator, theme.fg_focus)
 
 	-- Bar select indicators for tasklist
-	local tasklist_select_indicator = icon_dir .. "/tasklist_bg_bottom.png"
+	local tasklist_select_indicator = icon_dir .. "/tasklist_bg_top.png"
 	theme.tasklist_bg_image_focus = gears.color.recolor_image(tasklist_select_indicator, theme.fg_focus)
 
 	-- Layout

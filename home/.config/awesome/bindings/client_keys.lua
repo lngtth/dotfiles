@@ -49,7 +49,7 @@ return gears.table.join(
 		end,
 		{ description = "Restore minimized", group = "Client" }
 	),
-	awful.key({ m.super }, "m",
+	awful.key({ m.super, m.ctrl, m.shift }, "m",
 		function (c)
 			c.maximized = not c.maximized
 			c:raise()

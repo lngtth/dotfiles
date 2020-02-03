@@ -19,7 +19,11 @@ return {
 		l.tile,
 		l.tile,
 		l.max,
-		l.spiral.dwindle,
+		l.tile,
+		l.tile,
 		l.floating,
+		--l.tile,
+		--l.tile,
+		--l.tile,
 	},
 }

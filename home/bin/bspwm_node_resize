@@ -1,0 +1,17 @@
+#!/bin/sh
+
+direction=$1
+
+size='10'
+if [ "$#" -eq 2 ]
+then
+	size=$2
+fi
+
+case "$direction" in
+	west) bspc node @west -r -"$size" || bspc node @east -r -"$size" ;;
+	east) bspc node @west -r +"$size" || bspc node @east -r +"$size" ;;
+	north) bspc node @south -r -"$size" || bspc node @north -r -"$size" ;;
+	south) bspc node @south -r +"$size" || bspc node @north -r +"$size" ;;
+esac
+

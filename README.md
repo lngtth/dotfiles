@@ -10,8 +10,9 @@ Run `plain_xenodm.sh` as root to style xenodm
 
 ![xenodm screenshot](xenodm_screenshot_thumb.png)
 
-## awesomewm
+## bspwm 
 
-Mostly default config, but separated into multiple files for easier management
+Default bspwm, minimal sxhkd, no bar
 
-![awesomewm screenshot](awesomewm_screenshot_thumb.png)
+![bspwm screenshot](bspwm_screenshot_thumb.png)
+

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [ 1 -ne $# ]
+then
+	bspc config -d focused window_gap 0
+	exit 0
+fi
+
+op='+'
+if [ 'decrease' = "$1" ]
+then
+	op='-'
+fi
+
+size=$(($(bspc config -d focused window_gap) $op 8))
+if [ 0 -gt $size ]
+then
+	size=0
+fi
+
+bspc config -d focused window_gap "$size"
+

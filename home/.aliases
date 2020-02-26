@@ -1,5 +1,6 @@
-#alias la='ls -laF'
-alias la='colorls -laG'
+alias la='ls -laF'
+[ "$(which colorls 2>/dev/null)" ] && alias la='colorls -laG'
 
 alias ll='lifelog'
+alias lll='lifelog -l'
 

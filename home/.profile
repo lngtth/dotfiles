@@ -8,8 +8,8 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 
 # Preferred applications
 export TERMINAL='urxvt'
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 export FILE_MANAGER='ranger'
 export DRAWING='tegaki'
 export BROWSER='surf -f -g -s'
@@ -17,5 +17,5 @@ export VIDEO_EDITOR='kdenlive'
 export MUSIC='ncmpcpp'
 export MAIL='neomutt'
 export READER='zathura'
-export TORRENT='deluge'
+export TORRENT='transmission-cli'
 

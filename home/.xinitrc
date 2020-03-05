@@ -5,7 +5,7 @@ export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
-# Start ibus Daemon
+# Start ibus daemon
 ibus-daemon -drx
 
 # Shorter keypress delay

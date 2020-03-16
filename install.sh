@@ -7,4 +7,3 @@ df_path="$(dirname -- "$0")/home"
 echo "Copying dotfiles to current user home..."
 cp -fR ${df_path}/. ~
 ln ~/.Xdefaults ~/.Xresources
-

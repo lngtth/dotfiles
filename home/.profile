@@ -18,4 +18,3 @@ export MUSIC='ncmpcpp'
 export MAIL='neomutt'
 export READER='zathura'
 export TORRENT='transmission-cli'
-

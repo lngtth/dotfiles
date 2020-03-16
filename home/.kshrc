@@ -45,4 +45,3 @@ pf='$blk$bold'
 p='$(pwd | sed "s,^$HOME,~,")'
 
 export PS1="\[$r[$uf$u$r@$hf$h$r $pf$p$r] $uf$prompt$r \]"
-

@@ -21,4 +21,3 @@ unclutter -idle 1 &
 
 exec sxhkd &
 exec bspwm
-

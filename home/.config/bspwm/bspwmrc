@@ -20,4 +20,3 @@ bspc rule -a Screenkey manage=off
 bspc config single_monocle true
 
 feh --bg-center /usr/share/wallpaper/trees.jpg
-

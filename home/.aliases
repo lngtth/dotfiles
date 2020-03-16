@@ -3,4 +3,3 @@ alias la='ls -laF'
 
 alias ll='lifelog'
 alias lll='lifelog -l'
-

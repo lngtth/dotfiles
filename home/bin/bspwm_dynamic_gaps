@@ -19,4 +19,3 @@ then
 fi
 
 bspc config -d focused window_gap "$size"
-

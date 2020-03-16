@@ -107,4 +107,3 @@ super + {Return,e,f,d,b,v,m,l,t}
 	{urxvt,vim,ranger,tegaki,surf -f -g -s,kdenlive,ncmpcpp,neomutt,deluge}
 super + r
 	dmenu_run 
-

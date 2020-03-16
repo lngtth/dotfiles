@@ -3,6 +3,7 @@
 utils='
 htop
 colorls
+password-store
 '
 
 programming='

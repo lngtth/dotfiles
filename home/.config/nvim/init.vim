@@ -20,7 +20,7 @@ set guioptions-=T
 	set t_Co=256
 	set guitablabel=%M\ %t
 endif
-set encoding=utf8
+set encoding=utf-8
 set ffs=unix,dos,mac
 set shiftwidth=4
 set tabstop=4

@@ -17,7 +17,5 @@ urxvtd -q -f -o
 # Hide mouse when not in use
 unclutter -idle 1 &
 
-#exec awesome
-
-exec sxhkd &
+sxhkd &
 exec bspwm

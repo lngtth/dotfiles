@@ -25,6 +25,7 @@ neomutt
 lynx
 surf
 transmission
+youtube-dl
 dmenu
 gimp
 zathura

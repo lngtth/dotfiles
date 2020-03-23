@@ -1,5 +1,8 @@
 alias la='ls -laF'
 [ "$(which colorls 2>/dev/null)" ] && alias la='colorls -laG'
 
+alias yt='youtube-dl --add-metadata -ic'
+alias yta='youtube-dl --add-metadata -xic'
+
 alias ll='lifelog'
 alias lll='lifelog -l'

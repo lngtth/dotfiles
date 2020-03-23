@@ -17,7 +17,7 @@ xscreensaver.unfade: false
 ! urxvt
 URxvt*loginShell: true
 URxvt*scrollBar: false
-URxvt*font: xft:monospace:size=10
+URxvt*font: xft:Terminus:size=10,xft:monospace:size=10
 URxvt*internalBorder: 16
 URxvt*transparent: false
 URxvt*depth: 24

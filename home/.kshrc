@@ -1,19 +1,8 @@
 . /etc/ksh.kshrc
 
-export PATH HOME TERM
-export ENV=$HOME/.kshrc
-export LC_CTYPE=en_US.UTF-8
+# Aliases
+[ -f ~/.aliases ] && . ~/.aliases
 
-# colorls
-export LSCOLORS=exfxcxdxbxegedabagacad
-
-# aliases
-if [ -f ~/.ksh_aliases ]
-then
-	. ~/.ksh_aliases
-fi
-
-# terminal prompt
 reset='\033[00m'
 blk='\033[30m'
 red='\033[31m'
@@ -26,22 +15,24 @@ wht='\033[37m'
 bold='\033[1m'
 under='\033[4m'
 
-# root/admin
+# Root formatting and prompt
 if [ $(id -u) -eq 0 ]
 then
 	uf='$red$bold'
+	hf='$red'
+	pf='$blk$bold'
 	prompt='#'
-# normal
+# Normal formatting and prompt
 else
-	uf='$blu$bold'
+	uf='$wht$bold'
+	hf='$wht'
+	pf='$blk$bold'
 	prompt='\$'
 fi
 
 r='$reset'
 u='$USER'
-hf='$yel'
 h='$HOST'
-pf='$blk$bold'
-p='$(pwd | sed "s,^$HOME,~,")'
+p='$(pwd | sed "s,^$HOME,~," | sed "s,^/home/,~,")'
 
-export PS1="\[$r[$uf$u$r@$hf$h$r $pf$p$r] $uf$prompt$r \]"
+export PS1="\[$r$uf$u$r@$hf$h$r $pf$p$r $uf$prompt$r \]"

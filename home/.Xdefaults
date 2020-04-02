@@ -37,7 +37,7 @@ URxvt*perl-ext:
 URxvt*perl-ext-common:
 
 ! 16 color space
-*background: #151718
+*background: #000000
 *foreground: #d6d6d6
 *cursorColor: #ff00ff
 *color0: #151718
